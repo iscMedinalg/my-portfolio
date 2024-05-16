@@ -1,0 +1,50 @@
+---
+import AstroIcon from "./icons/AstroIcon.astro";
+import Midudev from "./icons/Midudev.astro";
+
+const currentYear = new Date().getFullYear()
+---
+
+<footer
+  class="opacity-80 mt-16 pb-8 mx-auto container lg:max-w-4xl flex text-center
+  text-gray-600 dark:text-gray-200 bg-white border-gray-200 dark:bg-[#030712]"
+>
+  <div
+    class="rounded-lg w-full max-w-screen-xl mx-auto py-4 text-pretty"
+  >
+    <span class="text-sm text-center text-zinc-800/90 dark:text-zinc-200/90"
+      >© {currentYear}
+      <a href="https://www.linkedin.com/in/gustaavoml" class="hover:underline">gustaavoml</a>. Casi
+      todos los derechos reservados.
+    </span>
+    <div class="flex flex-row items-center justify-center gap-2">
+      <Midudev class="w-4 h-4 "/>
+      <p>Este sitio fue desarrollado con Astro. </p>
+      <AstroIcon class="w-4 h-4 " />
+    </div>
+    <ul
+      class="flex justify-around pd-2 items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
+    >
+      <li>
+        <a id="contacto" href="https://www.linkedin.com/in/gustaavoml" class="hover:underline"
+          >Contacto</a
+        >
+      </li>
+      <li>Top Secret <span class="inline-flex animate-pulse" data-confetti-button>🎉</span></li>
+    </ul>
+  </div>
+
+</footer>
+
+<script>
+	
+// Importa módulos npm.
+// @ts-ignore
+import confetti from '../../node_modules/canvas-confetti';
+	// Encuentra nuestro componente en la página.
+	const buttons = document.querySelectorAll('[data-confetti-button]');
+	// Agrega event listeners para disparar confetti cuando un botón es clickeado.
+	buttons.forEach((button) => {
+	  button.addEventListener('click', () => confetti());
+	});
+</script>

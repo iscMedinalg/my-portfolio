@@ -1,0 +1,456 @@
+---
+import Angular from "./icons/Angular.astro";
+import React from "./icons/React.astro";
+import Vue from "./icons/Vue.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import Javascript from "./icons/Javascript.astro";
+import Typescript from "./icons/Typescript.astro";
+import Github from "./icons/Github.astro";
+import Nuxt from "./icons/Nuxt.astro";
+import OpenAI from "./icons/OpenAI.astro";
+import Pinia from "./icons/Pinia.astro";
+import Platzi from "./icons/Platzi.astro";
+import Prisma from "./icons/Prisma.astro";
+import Replicate from "./icons/Replicate.astro";
+import Stripe from "./icons/Stripe.astro";
+import Supabase from "./icons/Supabase.astro";
+import Svelte from "./icons/Svelte.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Jwt from "./icons/Jwt.astro";
+import ExpressJS from "./icons/ExpressJS.astro";
+import MongoDB from "./icons/MongoDB.astro";
+import NodeJS from "./icons/NodeJS.astro"
+import Java from "./icons/Java.astro";
+import Spring from "./icons/Spring.astro";
+import CSharp from "./icons/CSharp.astro";
+import HTML from "./icons/HTML.astro";
+import CSS from "./icons/CSS.astro";
+import Git from "./icons/Git.astro";
+import DotNet from "./icons/DotNet.astro";
+
+
+
+const TAGS = {
+  PLATZI: {
+    name: "Platzi",
+    class: "bg-black text-white",
+    icon: Platzi,
+  },
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-black text-white",
+    icon: Angular,
+  },
+  ASTRO: {
+    name: "Astro",
+    class:"bg-black text-white",
+    icon: AstroIcon,
+  },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class:"bg-black text-white",
+    icon: Javascript,
+  },
+  JWT: {
+    name: "JSON Web Token",
+    class:"bg-black text-white",
+    icon: Jwt,
+  },
+  NUXT: {
+    name: "Nuxt",
+    class:"bg-black text-white",
+    icon: Nuxt,
+  },
+  OPENAI: {
+    name: "OpenAI",
+    class:"bg-black text-white",
+    icon: OpenAI,
+  },
+  PINIA: {
+    name: "Pinia",
+    class: "bg-black text-white",
+    icon: Pinia,
+  },
+  PRISMA: {
+    name: "Prisma",
+    class:"bg-black text-white",
+    icon: Prisma,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: React,
+  },
+  REPLICATE: {
+    name: "Replicate",
+    class: "bg-black text-white",
+    icon: Replicate,
+  },
+  STRIPE: {
+    name: "Stripe",
+    class:"bg-black text-white",
+    icon: Stripe,
+  },
+  SUPABASE: {
+    name: "Supabase",
+    class:"bg-black text-white",
+    icon: Supabase,
+  },
+  SVELTE: {
+    name: "Svelte",
+    class:"bg-black text-white",
+    icon: Svelte,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class:"bg-black text-white",
+    icon: Tailwind,
+  },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class:"bg-black text-white",
+    icon: Typescript,
+  },
+  VUE: {
+    name: "VueJS",
+    class: "bg-black text-white",
+    icon: Vue,
+  },
+  EXPRESSJS: {
+    name: "Express.js",
+    class: "bg-black text-white",
+    icon: ExpressJS,
+  },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-black text-white",
+    icon: MongoDB,
+  },
+  NODEJS: {
+    name: "NodeJS",
+    class: "bg-black text-white",
+    icon: NodeJS,
+  },
+  JAVA: {
+    name: "Java",
+    class: "bg-black text-white",
+    icon: Java,
+  },
+  SPRING: {
+    name: "Spring",
+    class: "bg-black text-white",
+    icon: Spring,
+  },
+  CSHARP: {
+    name: "C#",
+    class: "bg-black text-white",
+    icon: CSharp,
+  },
+  HTML: {
+    name: "HTML5",
+    class: "bg-black text-white",
+    icon: HTML,
+  },
+  CSS: {
+    name: "CSS3",
+    class: "bg-black text-white",
+    icon: CSS,
+  },
+  GIT: {
+    name: "Git",
+    class: "bg-black text-white",
+    icon: Git,
+  },
+  GITHUB: {
+    name: "Github",
+    class: "bg-black text-white",
+    icon: Github,
+  },
+  DOTNET: {
+    name: ".Net Framework",
+    class: "bg-black text-white",
+    icon: DotNet,
+  },
+};
+
+const CERTIFICATES = [
+
+  //Angular 17: Creación de aplicaciones Angular
+  {
+    title: "Angular 17: Creación de aplicaciones",
+    description:
+      "Conceptos de una Single Page Applicaction con la creación de un e-commerce con la implementación de su arquitectura, enrutamiento, navegación, pipes y REST API. ",
+    link: "https://platzi.com/p/gustaavoml/curso/8352-angular/diploma/detalle/",
+    github: "#",
+    image: "/certificates/Angular17CreacionDeApps.webp",
+    tags: [ TAGS.ANGULAR, TAGS.TAILWIND ],
+  },
+
+  //Autenticación con Angular
+  {
+    title: "Autenticación con Angular",
+    description:
+      "Aplicación de las mejores estrategias para Single Page Applications con Angular Y JSON Web Tokens",
+    link: "https://platzi.com/p/gustaavoml/curso/4460-angular-autenticacion/diploma/detalle/",
+    github: "#",
+    image: "/certificates/AutenticacionAngular.webp",
+    tags: [ TAGS.ANGULAR, TAGS.JWT ],
+  },
+
+  //ReactJS Patrones de Render y Composición
+  {
+    title: "ReactJS Patrones de Render y Composición",
+    description:
+      "Patrones de render mas importantes en React con render props, high order components y React Hooks. Composición de componentes y colocacion de estado en React.",
+    link: "https://platzi.com/p/gustaavoml/curso/2457-react-patrones-render/diploma/detalle/",
+    github: "#",
+    image: "/certificates/PatronesDeRender.webp",
+    tags: [ TAGS.REACT],
+  },
+
+  //Javascript Algorithms and Data Structures FCC
+  {
+    title: "Javascript Algorithms and Data Structures",
+    description:
+      "Desarrollo de estructuras de datos con matrices, objetos, Expresiones regulares, POO, Programación funcional",
+    link: "https://www.freecodecamp.org/certification/fcc03a7ea00-8e0c-4bec-9d33-695c4c524db9/javascript-algorithms-and-data-structures",
+    github: "#",
+    image: "/certificates/FCCAlgorithms.webp",
+    tags: [ TAGS.JAVASCRIPT, ],
+  },
+
+  /***************************************************/
+
+  //Typescript Tipos Avanzados y Funciones
+  {
+    title: "Typescript Tipos Avanzados y Funciones",
+    description:
+      "Características avanzadas con interfaces, tuplas, enums y sobrecarga de funciones.",
+    link: "https://platzi.com/p/gustaavoml/curso/2879-typescript-tipos-avanzados/diploma/detalle/",
+    github: "#",
+    image: "/certificates/TiposAvanzadosYFunciones.webp",
+    tags: [ TAGS.TYPESCRIPT ],
+  },
+
+  //Maquetación con Angular CDK y TailwindCSS
+  {
+    title: "Maquetación con Angular CDK y TailwindCSS",
+    description:
+      "Componentes interactivos con drag and drop utilizando angular CDK y TailwindCSS",
+    link: "https://platzi.com/p/gustaavoml/curso/4459-angular-tailwind/diploma/detalle/",
+    github: "#",
+    image: "/certificates/MaquetacionConAngular.webp",
+    tags: [ TAGS.ANGULAR, TAGS.TAILWIND ],
+  },
+
+  //Backend Development and API's FCC
+  {
+    title: "Backend Development and API's",
+    description:
+      "Desarrollo de Aplicaciones con Node.js y npm con marco de desarrollo de Express, MongoDB y Mongoose.",
+    link: "https://www.freecodecamp.org/certification/fcc03a7ea00-8e0c-4bec-9d33-695c4c524db9/back-end-development-and-apis",
+    github: "#",
+    image: "/certificates/FCCBackEndDevelopment.webp",
+    tags: [ TAGS.JAVASCRIPT, TAGS.EXPRESSJS, TAGS.NODEJS ],
+  },
+
+  //Curso de Programación Orientada a Objetos
+  {
+    title: "Curso de Programación Orientada a Objetos",
+    description:
+      "Objetos literales, instancia de clases, prototipos Javascript. Herencia, Poliformismo, Encapsulamiento, Abstracción.",
+    link: "https://platzi.com/p/gustaavoml/curso/1474-oop/diploma/detalle/",
+    github: "#",
+    image: "/certificates/POO.webp",
+    tags: [ TAGS.JAVASCRIPT ],
+  },
+
+  /***************************************************/
+
+  //Curso de Java Spring
+  {
+    title: "Curso de Java Spring",
+    description:
+      "Desarrollo de aplicaciones java con Spring.",
+    link: "https://platzi.com/p/gustaavoml/curso/1996-java-spring/diploma/detalle/",
+    github: "#",
+    image: "/certificates/JavaSpring.webp",
+    tags: [ TAGS.JAVA, TAGS.SPRING ],
+  },
+
+  //Introducción a Java SE
+  {
+    title: "Introducción a Java SE",
+    description:
+      "Programación Orientada a Objetos aplicado a clases e interfaces. Programación Modular y lambdas",
+    link: "https://platzi.com/p/gustaavoml/curso/1631-java-basico/diploma/detalle/",
+    github: "#",
+    image: "/certificates/JavaSE.webp",
+    tags: [ TAGS.JAVA, ],
+  },
+
+  //Principios SOLID en C# y .NET
+  {
+    title: "Principios SOLID en C# y .NET",
+    description:
+      "Los 5 Principios SOLID aplicados con C# ",
+    link: "https://platzi.com/p/gustaavoml/curso/4761-solid-csharp-net/diploma/detalle/",
+    github: "#",
+    image: "/certificates/PrincipiosSolidCSharp.webp",
+    tags: [ TAGS.CSHARP, TAGS.DOTNET ],
+  },
+
+  //Fundamentos de Entity Framework
+  {
+    title: "Fundamentos de Entity Framework",
+    description:
+      "Desarrollo de aplicaciones con el ORM Entity Framework creando modelos con Fluent API ",
+    link: "https://platzi.com/p/gustaavoml/curso/2987-entity-framework/diploma/detalle/",
+    github: "#",
+    image: "/certificates/EntityFramework.webp",
+    tags: [ TAGS.CSHARP, TAGS.DOTNET ],
+  },
+
+  /***************************************************/
+
+  //API's con .NET
+  {
+    title: "API's con .NET",
+    description:
+      "Desarrollo de aplicaciones API con .Net, SQL Server y Swagger. ",
+    link: "https://platzi.com/p/gustaavoml/curso/2983-apis-net/diploma/detalle/",
+    github: "#",
+    image: "/certificates/ApisDotNet.webp",
+    tags: [ TAGS.CSHARP, TAGS.DOTNET ],
+  },
+
+  //Curso Profesional de Javascript
+  {
+    title: "Curso Profesional de Javascript",
+    description:
+      "Conceptos avanzados de javascript aplicados ",
+    link: "https://platzi.com/p/gustaavoml/curso/1642-javascript-profesional/diploma/detalle/",
+    github: "#",
+    image: "/certificates/ProfesionalJS.webp",
+    tags: [ TAGS.JAVASCRIPT ],
+  },
+
+  //Fundamentos de Typescript
+  {
+    title: "Fundamentos de Typescript",
+    description:
+      "Fundamentos de Typescript para un tipado fuerte con datos primitivos para agilizar su mantenimiento ",
+    link: "https://platzi.com/p/gustaavoml/curso/2878-typescript/diploma/detalle/",
+    github: "#",
+    image: "/certificates/FundamentosTypescript.webp",
+    tags: [ TAGS.TYPESCRIPT, ],
+  },
+
+  //Fundamentos Angular
+  {
+    title: "Fundamentos Angular",
+    description:
+      "Conceptos básicos del framework de angular.",
+    link: "https://platzi.com/p/gustaavoml/curso/2478-angular16/diploma/detalle/",
+    github: "#",
+    image: "/certificates/FundamentosAngular.webp",
+    tags: [ TAGS.ANGULAR, ],
+  },
+
+  /***************************************************/
+
+  //Curso de HTML y CSS
+  {
+    title: "Curso de HTML y CSS",
+    description:
+      "Desarrollo de aplicaciones con HTML, su Semantica y como dar estilos con CSS, medias EM-REM Web Resposive y mas",
+    link: "https://platzi.com/p/gustaavoml/curso/2008-html-css/diploma/detalle/",
+    github: "#",
+    image: "/certificates/DefinitivoHTMLCSS.webp",
+    tags: [ TAGS.HTML, TAGS.CSS ],
+  },
+
+  //Fundamentos de NodeJS
+  {
+    title: "Fundamentos de NodeJS",
+    description:
+      "Manejo de asincronía modulos del core y construir una libreria propia del core ",
+    link: "https://platzi.com/p/gustaavoml/curso/1759-fundamentos-node/diploma/detalle/",
+    github: "#",
+    image: "/certificates/FundamentosNodeJS.webp",
+    tags: [ TAGS.NODEJS ],
+  },
+
+  //Curso profesional de Git Github
+  {
+    title: "Curso Profesional de GIT - GITHUB",
+    description:
+      "Gestión de Proyectos a tráves de Git almacenandolos en GitHub",
+    link: "https://platzi.com/p/gustaavoml/curso/1557-git-github/diploma/detalle/",
+    github: "#",
+    image: "/certificates/git-github.webp",
+    tags: [ TAGS.GIT, TAGS.GITHUB ],
+  },
+  
+];
+---
+
+<div class="grid grid-cols-2 gap-4 items-end">
+  {
+    CERTIFICATES.map(({ image, title, description, tags, link, github }) => (
+      <article class=" space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+      
+          <div class="flex flex-col">
+            <h3 class="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100 ">
+              {title}
+            </h3>
+            
+            {/* Tecnológias */}
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            
+            <div class=" col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+              <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+            </div>
+          </div>
+    
+      </article>
+    ))
+  }
+</div>
+
+<!-- <div class="w-full md:w-1/2 md:max-w-lg ">
+
+  <div class="flex flex-wrap mt-2">
+    
+
+    {/* <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div> */}
+
+
+    {/* <footer class="flex items-end justify-start mt-4 gap-x-4">
+        {github && (
+          <LinkButton href={github}>
+            <Github class="size-6" />
+            Code
+            
+          </LinkButton>
+        )}
+        {link && (
+          <LinkButton href={link}>
+            <Platzi class="size-4" />
+            Preview
+          </LinkButton>
+        )}
+    </footer> */}
+  </div>
+</div> -->

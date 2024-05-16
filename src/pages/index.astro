@@ -1,0 +1,106 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Badge from '@/components/Badge.astro';
+import SocialPill from '@/components/SocialPill.astro';
+import Linkedin from '@/components/icons/Linkedin.astro';
+import Github from '@/components/icons/Github.astro';
+import Platzi from '@/components/icons/Platzi.astro';
+import Briefcase from '@/components/icons/Briefcase.astro';
+import Experience from '@/components/Experience.astro';
+import SectionContainer from '@/components/SectionContainer.astro';
+import Projects from '@/components/Projects.astro';
+import Code from '@/components/icons/Code.astro';
+import AboutMe from '@/components/AboutMe.astro';
+import Certificates from '@/components/Certificates.astro';
+import Certificate from '@/components/icons/Certificate.astro';
+---
+
+<Layout 
+	title="Gustavo Medina Limon | Desarrollador de Software | Programador Web"
+	description='Contacta a Gustavo Medina Limon para Crear Aplicaciones web y Móvil con tecnológias como React, Angular, Typescript, Javascript, Tailwind, Bootstrap entre otras.'
+>
+	<main class="px-4">
+		<SectionContainer class="pt-24" id="contact">
+			<div class="max-w-xl">
+				<div class="flex gap-4 mb-4">
+					<img 
+						class="rounded-full shadow-lg size-16" 
+						src="https://static.platzi.com/media/avatars/avatars/gustaavoml_1301d8a4-d6eb-4314-8b9f-a5ba84b65ef8.jpeg" 
+						alt="Gustavo Medina Limon Photo"
+					>
+					<div class="flex items-center">
+						<Badge>Disponible para trabajar 💻</Badge>
+					</div>
+				</div>
+			</div>
+
+			<h1 class="text-white text-4xl md:text-5xl lg:text-6xl 
+				font-bold gap-x-4 pb-6 lg:pb-10"
+			>
+				Hey, soy Gustavo Medina Limon 
+				<a 
+					href="https://www.linkedin.com/in/gustaavoml/" 
+					target="_blank" 
+					rel="noopener"
+				>
+				</a> 
+			</h1>
+		
+			<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px] mb-2">
+				Ingeniero en Sistemas Computacionales, especialista en <span class=" text-yellow-200">Desarrollo web</span>. 
+				Transformando ideas en soluciones y aplicaciones digitales.
+				De San Luis Potosí, México.
+				
+			</h2>
+		
+			<nav class="flex flex-col mb-2 sm:flex-row">
+				<SocialPill href="https://www.linkedin.com/in/gustaavoml">
+					<Linkedin class="w-6 h-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/iscMedinalg">
+					<Github class="size-6 " />
+					Github
+				</SocialPill>
+				<SocialPill href="https://platzi.com/p/gustaavoml">
+					<Platzi class="w-6 h-6" />
+					Platzi
+				</SocialPill>
+				
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Briefcase class="size-7"/>
+				Experiencia Laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Code class="size-7"/>
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+
+		<SectionContainer id="certificates">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center grid-rows-4">
+				<Certificate class="size-7"/>
+				Certificados
+			</h2>
+			<Certificates />
+		</SectionContainer>
+
+		<SectionContainer id="aboutMe" >
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Code class="size-7"/>
+				Sobre mi
+			</h2>
+			<AboutMe />
+		</SectionContainer>
+
+	</main>
+</Layout>

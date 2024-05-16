@@ -1,0 +1,206 @@
+---
+import LinkButton from "./LinkButton.astro";
+import Angular from "./icons/Angular.astro";
+import React from "./icons/React.astro";
+import Vue from "./icons/Vue.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import Javascript from "./icons/Javascript.astro";
+import Typescript from "./icons/Typescript.astro";
+import Github from "./icons/Github.astro";
+import Nuxt from "./icons/Nuxt.astro";
+import OpenAI from "./icons/OpenAI.astro";
+import Pinia from "./icons/Pinia.astro";
+import Platzi from "./icons/Platzi.astro";
+import Prisma from "./icons/Prisma.astro";
+import Replicate from "./icons/Replicate.astro";
+import Stripe from "./icons/Stripe.astro";
+import Supabase from "./icons/Supabase.astro";
+import Svelte from "./icons/Svelte.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Nextjs from "./icons/Nextjs.astro";
+import MongoDB from "./icons/MongoDB.astro";
+
+const TAGS = {
+  PLATZI: {
+    name: "Platzi",
+    class: "bg-black text-white",
+    icon: Platzi,
+  },
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-black text-white",
+    icon: Angular,
+  },
+  ASTRO: {
+    name: "Astro",
+    class:"bg-black text-white",
+    icon: AstroIcon,
+  },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class:"bg-black text-white",
+    icon: Javascript,
+  },
+  NUXT: {
+    name: "Nuxt",
+    class:"bg-black text-white",
+    icon: Nuxt,
+  },
+  OPENAI: {
+    name: "OpenAI",
+    class:"bg-black text-white",
+    icon: OpenAI,
+  },
+  PINIA: {
+    name: "Pinia",
+    class: "bg-black text-white",
+    icon: Pinia,
+  },
+  PRISMA: {
+    name: "Prisma",
+    class:"bg-black text-white",
+    icon: Prisma,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: React,
+  },
+  REPLICATE: {
+    name: "Replicate",
+    class: "bg-black text-white",
+    icon: Replicate,
+  },
+  STRIPE: {
+    name: "Stripe",
+    class:"bg-black text-white",
+    icon: Stripe,
+  },
+  SUPABASE: {
+    name: "Supabase",
+    class:"bg-black text-white",
+    icon: Supabase,
+  },
+  SVELTE: {
+    name: "Svelte",
+    class:"bg-black text-white",
+    icon: Svelte,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class:"bg-black text-white",
+    icon: Tailwind,
+  },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class:"bg-black text-white",
+    icon: Typescript,
+  },
+  VUE: {
+    name: "VueJS",
+    class: "bg-black text-white",
+    icon: Vue,
+  },
+  NEXTJS: {
+    name: "Next.JS",
+    class: "bg-black text-white",
+    icon: Nextjs
+  },
+  MONGODB: {
+    name: "Mongo DB",
+    class: "bg-black text-white",
+    icon: MongoDB
+  },
+  
+};
+
+const PROJECTS = [
+{
+    title: "Web Price Tracker",
+    description:
+      "Desarrolle una aplicación que permite hacer el seguimiento de precios de productos de Amazon! Cuenta con mensajes personalizados que llegaran a tu correo si existe una modificación en los precios.",
+    link: "#",
+    github: "#",
+    image: "/projects/WebPriceTracker/Pricewise.webp",
+    tags: [TAGS.NEXTJS, TAGS.MONGODB, TAGS.TAILWIND, ],
+  },
+  {
+    title: "Trello App",
+    description:
+      "Desarrolle un sistema idéntico a la popular aplicación de Trello la cual permite trabajar con espacios de trabajo donde puedes anotar tus tareas por hacer.",
+    link: "#",
+    github: "#",
+    image: "/projects/project.webp",
+    tags: [TAGS.ANGULAR, TAGS.TAILWIND],
+  },
+  {
+    title: "Spotify App Clone",
+    description:
+      "Un clone de la famosa applicacion de musica en streaming Spotify. Consume una API local la cual que reproduce algunas canciones de manera local donde contiene información de algunos album\'s y artistas con sus respectivas canciones, ademas de playlists.",
+    link: "#",
+    github: "#",
+    image: "/projects/SpotifyApp/Spotify.webp",
+    tags: [TAGS.REACT, TAGS.ASTRO, TAGS.SVELTE, TAGS.TAILWIND ],
+  },
+  {
+    title: "Luminus AI",
+    description:
+      "Una aplicación SaaS, Software as a Service, la cual genera por medio de inteligencia artificial diferentes características como respuestas en código.",
+    link: "#",
+    github: "#",
+    image: "/projects/Luminus/Luminus.webp", 
+    tags: [ TAGS.VUE, TAGS.PINIA, TAGS.NUXT, TAGS.OPENAI, TAGS.SUPABASE, TAGS.PRISMA, TAGS.STRIPE, TAGS.REPLICATE, TAGS.TYPESCRIPT ],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+  <div class="w-full md:w-1/2">
+    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+    </div>
+  </div>
+
+  <div class="w-full md:w-1/2 md:max-w-lg">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+      {title}
+    </h3>
+    <div class="flex flex-wrap mt-2">
+      <ul class="flex flex-row flex-wrap mb-2 gap-x-2 gap-1">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
+          {github && (
+            <LinkButton href={github}>
+              <Github class="size-6" />
+              Code
+              
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Platzi class="size-4" />
+              Preview
+            </LinkButton>
+          )}
+        </footer>
+    </div>
+  </div>
+</article>
+    ))
+  }
+</div>

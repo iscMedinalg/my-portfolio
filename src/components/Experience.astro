@@ -1,0 +1,57 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: 'Abril 2024 - Junio 2024',
+        title: 'Web Scraper Price Tracker',
+        description: 'Desarrolle en el entorno de NextJS - React un aplicación capaz de obtener datos de productos de Amazon, los cuales sirven para comparar precios de productos y así obtener mejores precios al momento de comprar algun producto de interes.',
+        link: '#'
+    },
+    
+    {
+        date: 'Enero 2024 - Marzo 2024',
+        title: 'Software como servicio con Inteligenia Artificial',
+        description: 'Desarrolle con React y Typescript un SAAS con la API de OpenAI, famosa por crear el modelo GPT. La cual genera Imágenes, Video, Código y Música, Almacenando los datos de los usuarios en Supabase y facturando por medio de la aplicación Stripe',
+        link: '#'
+    },
+
+    {
+        date: 'Septiembre 2023 - Diciembre 2023',
+        title: 'Social Media ShareMe',
+        description: 'Desarrolle una red social la cual es similar a printest, pero con un modelo parecido al de tiktok.',
+        link: '#'
+    },
+
+    {
+        date: 'Marzo 2023 - Julio 2023',
+        title: 'Spotify Clone App',
+        description: 'Desarrolle un Clone de Spotify el cual incluye playlists, artistas, albumes y el reproductor de música.',
+        link: '#'
+    },
+
+    {
+        date: 'Septiembre 2022 - Febrero 2023',
+        title: 'Trello Clone',
+        description: 'Desarrolle las funcionalidades de la popular plataforma Trello, la cual permite realizar spaceworks y listas de tareas las cual funcionan con drag and drop desarrollado con Angular CDK.',
+        link: '#'
+    },
+
+    {
+        date: 'Enero 2022 - Agosto - 2022',
+        title: 'Practicas Profesionales',
+        description: 'Desarrolle un Sistema Interno de Gestión de documentación con PHP y Javascript aplicando el Modelo MVC, Mejorando los tiempos de respuesta en la administración del ITSLP.',
+        link: '#'
+    },
+]
+---
+
+<ol class="relative border-s ml-3 border-gray-200 dark:border-gray-200">
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem { ...experience} />
+            </li>
+        ))
+    }
+</ol>
