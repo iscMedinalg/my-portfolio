@@ -2,13 +2,13 @@
 const { link } = Astro.props
 ---
 <a
-    class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base mb-2
-    text-white bg-white  border-gray-200 border rounded-lg
-    hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 
-    focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 
-    dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+    class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base cursor-pointer
+          border rounded-lg focus:z-10 focus:ring-4 focus:outline-none
+        text-black/80 dark:text-white bg-slate-200 dark:bg-indigo-900 border-gray-200 dark:border-gray-600
+        hover:bg-slate-300 dark:hover:bg-indigo-700 hover:text-black/80 dark:hover:text-white  
+        focus:ring-slate-100 dark:focus:ring-indigo-700"
 >
-    <!-- <slot name="icon-left"></slot> -->
+    <!-- <slot name="icon-left"></slot> focus:text-blue-700 -->
     <slot></slot>
     <!-- <slot name="icon-right"></slot> -->
     <svg
